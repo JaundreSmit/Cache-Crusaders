@@ -168,3 +168,10 @@ Insert Into STATUS (STATUS_ID, STATUS_NAME) values
 (3, 'Completed'),
 (4, 'To Do'),
 (5, 'Standby');
+
+--Departments
+Insert into DEPARTMENTS (DEPARTMENT_ID, DEPARTMENT_NAME) values 
+(1, 'Customer Service Representatives'), 
+(2, 'Technicians'), 
+(3, 'Sales and Marketing Personnel'), 
+(4, 'IT Personnel');
