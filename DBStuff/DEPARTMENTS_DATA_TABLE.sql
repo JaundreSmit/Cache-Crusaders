@@ -1,0 +1,6 @@
+REM INSERTING into FANIE.DEPARTMENTS
+SET DEFINE OFF;
+Insert into FANIE.DEPARTMENTS (DEPARTMENT_ID,DEPARTMENT_NAME) values (1,'Customer Service Representatives');
+Insert into FANIE.DEPARTMENTS (DEPARTMENT_ID,DEPARTMENT_NAME) values (2,'Technicians');
+Insert into FANIE.DEPARTMENTS (DEPARTMENT_ID,DEPARTMENT_NAME) values (3,'Sales and Marketing Personnel');
+Insert into FANIE.DEPARTMENTS (DEPARTMENT_ID,DEPARTMENT_NAME) values (4,'IT Personel');
