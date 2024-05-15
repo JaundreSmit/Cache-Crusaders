@@ -148,12 +148,23 @@ COMMENT ON COLUMN TECHNICIANS.DEPARTMENT_ID IS 'The technicians department';
 
 
 --Data Insert
-Insert into FANIE.PROVINCES (PROVINCE_ID,PROVINCE_NAME) values (1,'Eastern Cape');
-Insert into FANIE.PROVINCES (PROVINCE_ID,PROVINCE_NAME) values (2,'Free State');
-Insert into FANIE.PROVINCES (PROVINCE_ID,PROVINCE_NAME) values (3,'Gauteng');
-Insert into FANIE.PROVINCES (PROVINCE_ID,PROVINCE_NAME) values (4,'KwaZulu-Natal');
-Insert into FANIE.PROVINCES (PROVINCE_ID,PROVINCE_NAME) values (5,'Limpopo');
-Insert into FANIE.PROVINCES (PROVINCE_ID,PROVINCE_NAME) values (6,'Mpumalanga');
-Insert into FANIE.PROVINCES (PROVINCE_ID,PROVINCE_NAME) values (7,'Northern Cape');
-Insert into FANIE.PROVINCES (PROVINCE_ID,PROVINCE_NAME) values (8,'North West');
-Insert into FANIE.PROVINCES (PROVINCE_ID,PROVINCE_NAME) values (9,'Western Cape');
+--Provinces
+Insert into PROVINCES (PROVINCE_ID, PROVINCE_NAME) values 
+(1, 'Eastern Cape'), 
+(2, 'Free State'), 
+(3, 'Gauteng'), 
+(4, 'KwaZulu-Natal'), 
+(5, 'Limpopo'), 
+(6, 'Mpumalanga'), 
+(7, 'Northern Cape'), 
+(8, 'North West'), 
+(9, 'Western Cape');
+
+
+--Status
+Insert Into STATUS (STATUS_ID, STATUS_NAME) values 
+(1, 'In Transit'),
+(2, 'In Progress'),
+(3, 'Completed'),
+(4, 'To Do'),
+(5, 'Standby');
