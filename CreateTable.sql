@@ -12,20 +12,6 @@ DROP TABLE REPAIRS CASCADE CONSTRAINTS;
 DROP TABLE STATUS CASCADE CONSTRAINTS;
 DROP TABLE TECHNICIANS CASCADE CONSTRAINTS;
 DROP TABLE DEPARTMENTS CASCADE CONSTRAINTS;
----------------------------------------------------------
---Drop all Sequences
----------------------------------------------------------
-DROP SEQUENCE ORDER_ID_value;
-DROP SEQUENCE ADDRESS_ID_value;
-DROP SEQUENCE CUSTOMER_ID_value;
-DROP SEQUENCE PART_ID_value;
-DROP SEQUENCE PIO_ID_value;
-DROP SEQUENCE PIR_ID_value;
-DROP SEQUENCE PROVINCE_ID_value;
-DROP SEQUENCE REPAIR_ID_value;
-DROP SEQUENCE STATUS_ID_value;
-DROP SEQUENCE TECHNICIAN_ID_value;
-DROP SEQUENCE DEPARTMENT_ID_value;
 
 --------------------------------------------------------
 --  Create all Tables
