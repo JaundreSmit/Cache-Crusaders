@@ -49,34 +49,118 @@ INSERT INTO DEPARTMENTS (DEPARTMENT_ID, DEPARTMENT_NAME) VALUES
 (DEPARTMENT_ID_VALUE.nextval, 'IT Personnel');
 --
 
+
 --ADDRESS
 INSERT INTO address
-VALUES (ADDRESS_ID_VALUE.nextval,'8th street',20,'Polokwane',5);
+VALUES (ADDRESS_ID_VALUE.nextval,'1st street',10,'East London',1);
+
 INSERT INTO address
-VALUES (ADDRESS_ID_VALUE.nextval,'5th street',8,'Stofberg',2);
+VALUES (ADDRESS_ID_VALUE.nextval,'2nd street',20,'Bloemfontein',2);
+
 INSERT INTO address
-VALUES (ADDRESS_ID_VALUE.nextval,'7th street',99,'Pretoria',3);
+VALUES (ADDRESS_ID_VALUE.nextval,'3rd street',30,'Johannesburg',3);
+
+INSERT INTO address
+VALUES (ADDRESS_ID_VALUE.nextval,'4th street',40,'Durban',4);
+
+INSERT INTO address
+VALUES (ADDRESS_ID_VALUE.nextval,'5th street',50,'Polokwane',5);
+
+INSERT INTO address
+VALUES (ADDRESS_ID_VALUE.nextval,'6th street',60,'Nelspruit',6);
+
+INSERT INTO address
+VALUES (ADDRESS_ID_VALUE.nextval,'7th street',70,'Kimberley',7);
+
+INSERT INTO address
+VALUES (ADDRESS_ID_VALUE.nextval,'8th street',80,'Potchefstroom',8);
+
+INSERT INTO address
+VALUES (ADDRESS_ID_VALUE.nextval,'9th street',90,'Cape Town',9);
+
+INSERT INTO address
+VALUES (ADDRESS_ID_VALUE.nextval,'10th street',100,'Cape Town',9);
 --
 
 
 --Customers
 INSERT INTO customers
-VALUES (CUSTOMER_ID_VALUE.nextval, 'customer@email.com','0661024086','Fanie','Van Vuuren',1);
+VALUES (CUSTOMER_ID_VALUE.nextval, 'customer1@email.com','0661024086','Fanie','Van Vuuren',1);
+
 INSERT INTO customers
-VALUES (CUSTOMER_ID_VALUE.nextval, 'customer2@email.com','0715896321','Ben','Van Vuuren',2);
+VALUES (CUSTOMER_ID_VALUE.nextval, 'customer2@email.com','0715896321','Jaundre','Smit',2);
+
 INSERT INTO customers
-VALUES (CUSTOMER_ID_VALUE.nextval, 'customer3@email.com','0324928569','Veronica','Van Vuuren',3);
+VALUES (CUSTOMER_ID_VALUE.nextval, 'customer3@email.com','0324928569','Veronica','Brown',3);
+
+INSERT INTO customers
+VALUES (CUSTOMER_ID_VALUE.nextval, 'customer4@email.com','0823789431','Peter','Johnson',4);
+
+INSERT INTO customers
+VALUES (CUSTOMER_ID_VALUE.nextval, 'customer5@email.com','0112345678','Sarah','Taylor',5);
+
+INSERT INTO customers
+VALUES (CUSTOMER_ID_VALUE.nextval, 'customer6@email.com','0732145987','John','Davis',6);
+
+INSERT INTO customers
+VALUES (CUSTOMER_ID_VALUE.nextval, 'customer7@email.com','0314521987','Michael','Miller',7);
+
+INSERT INTO customers
+VALUES (CUSTOMER_ID_VALUE.nextval, 'customer8@email.com','0647892345','Emily','Wilson',8);
+
+INSERT INTO customers
+VALUES (CUSTOMER_ID_VALUE.nextval, 'customer9@email.com','0213456789','Daniel','Anderson',9);
+
+INSERT INTO customers
+VALUES (CUSTOMER_ID_VALUE.nextval, 'customer10@email.com','0834567890','Laura','Thomas',9);
 --
 
 --Parts
-INSERT INTO PARTS
-VALUES (PART_ID_VALUE.nextval,'RTX 3060','Nvidea','Graphics Card', 40000,20);
-INSERT INTO PARTS
-VALUES (PART_ID_VALUE.nextval,'GTX 1020','Nvidea','Graphics Card', 4000,14);
-INSERT INTO PARTS
-VALUES (PART_ID_VALUE.nextval,'GTX 1060 TI','Nvidea','Graphics Card', 8000,8);
-INSERT INTO PARTS
-VALUES (PART_ID_VALUE.nextval,'I3 400Hz','Intel','CPU', 1000,3);
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'RTX 3060', 'Nvidia', 'GPU', 14000, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Ryzen 9 5900X', 'AMD', 'CPU', 8600, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Corsair Vengeance 16GB', 'Corsair', 'RAM', 1500, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Samsung 970 EVO 1TB', 'Samsung', 'SSD', 2500, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Seagate Barracuda 2TB', 'Seagate', 'HDD', 1200, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Cooler Master H500', 'Cooler Master', 'Case', 1800, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Noctua NH-D15', 'Noctua', 'Cooler', 1900, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'EVGA 750W G5', 'EVGA', 'Power Supply', 2200, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Intel Core i7-11700K', 'Intel', 'CPU', 6300, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'ASUS ROG Strix 3080', 'ASUS', 'GPU', 31000, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'HyperX Fury 32GB', 'HyperX', 'RAM', 2800, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'WD Black SN850 1TB', 'Western Digital', 'SSD', 3000, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Crucial MX500 2TB', 'Crucial', 'SSD', 3800, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Fractal Design Meshify C', 'Fractal Design', 'Case', 1600, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'NZXT Kraken X63', 'NZXT', 'Cooler', 2400, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Corsair RM850x', 'Corsair', 'Power Supply', 2200, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Ryzen 5 5600X', 'AMD', 'CPU', 3700, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Gigabyte RTX 3070', 'Gigabyte', 'GPU', 21000, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'G.Skill Trident Z 16GB', 'G.Skill', 'RAM', 1800, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Intel 670p 2TB', 'Intel', 'SSD', 3100, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Toshiba X300 4TB', 'Toshiba', 'HDD', 2500, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Lian Li PC-O11 Dynamic', 'Lian Li', 'Case', 2100, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Be Quiet! Dark Rock Pro 4', 'Be Quiet!', 'Cooler', 1500, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Thermaltake Toughpower GF1 850W', 'Thermaltake', 'Power Supply', 2300, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Intel Core i9-11900K', 'Intel', 'CPU', 9400, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'MSI RTX 3090', 'MSI', 'GPU', 47000, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Corsair Dominator Platinum 64GB', 'Corsair', 'RAM', 7500, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Samsung 860 EVO 500GB', 'Samsung', 'SSD', 1500, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'WD Blue 1TB', 'Western Digital', 'HDD', 1000, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Phanteks Eclipse P400A', 'Phanteks', 'Case', 1300, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'NZXT H510', 'NZXT', 'Case', 1200, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Deepcool Castle 360EX', 'Deepcool', 'Cooler', 2600, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Seasonic Prime 1000W', 'Seasonic', 'Power Supply', 2700, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Ryzen 7 5800X', 'AMD', 'CPU', 5900, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'ASUS TUF RTX 3060', 'ASUS', 'GPU', 14000, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Patriot Viper Steel 32GB', 'Patriot', 'RAM', 3200, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Adata XPG SX8200 Pro 1TB', 'Adata', 'SSD', 3300, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Seagate FireCuda 2TB', 'Seagate', 'HDD', 2300, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Cooler Master NR200P', 'Cooler Master', 'Case', 1600, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'NZXT Kraken Z63', 'NZXT', 'Cooler', 2800, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Corsair HX1000', 'Corsair', 'Power Supply', 3200, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Intel Core i5-11600K', 'Intel', 'CPU', 4700, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Gigabyte AORUS RTX 3080', 'Gigabyte', 'GPU', 31000, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Kingston HyperX Fury 16GB', 'Kingston', 'RAM', 1600, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
+INSERT INTO PARTS VALUES (PART_ID_VALUE.nextval, 'Crucial P5 2TB', 'Crucial', 'SSD', 3700, FLOOR(DBMS_RANDOM.VALUE(0, 21)));
 --
 
 --Technicians
@@ -88,7 +172,7 @@ INSERT INTO TECHNICIANS
 VALUES (TECHNICIAN_ID_VALUE.nextval,1,'Smith',0152364150,'Steven',2);
 --
 
---Order
+--Orders
 
 INSERT INTO ORDERS
 VALUES (ORDER_ID_VALUE.nextval,1,1,'01-Jan-23',5,0);
@@ -115,7 +199,7 @@ UPDATE ORDERS
 SET total_cost = (SELECT PART_COST FROM PARTS WHERE PART_ID = 1)*1.1
 WHERE ORDER_ID = '3';
 
---Repair
+--Repairs
 
 INSERT INTO REPAIRS
 VALUES (REPAIR_ID_VALUE.nextval,1,1,5,(SELECT ADDRESS_ID FROM CUSTOMERS WHERE CUSTOMER_ID = '1'),'01-Jan-23',0);
