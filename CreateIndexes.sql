@@ -1,7 +1,6 @@
 --------------------------------------------------------
 --  File created - Friday-May-17-2024   
 --------------------------------------------------------
-  
 CREATE INDEX TECH_NAMESURNAME_IDX ON TECHNICIANS (TECH_NAME, TECH_SURNAME);
 CREATE INDEX PARTS_COSTTYPE_IDX ON PARTS (PART_COST, PART_TYPE);
 CREATE INDEX CUSTOMERS_FULLNAME_IDX ON CUSTOMERS (CUSTOMER_NAME, CUSTOMER_SURNAME);
